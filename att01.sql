@@ -62,9 +62,13 @@ SELECT Titulo, autor, paginas, editora, ano, paginas, valor_capa FROM Livraria.L
 
 SELECT Titulo, autor, paginas, editora, ano, paginas, valor_kindle FROM Livraria.Livros;
 
--- 9 
+-- 9 Trazer o nome dos autores com livros publicados pela editora Sextante;
 
-SELECT autor, ano FROM Livraria.Livros
-WHERE  Editora = sextante;
+SELECT autor, Editora  FROM Livraria.Livros
+WHERE  Editora = 'sextante';
+
+-- 10 Trazer o nome do livro, autores, valor com capa comum e valor no Kindle.
+SELECT Titulo, autor, valor_capa, valor_kindle FROM livraria.livros;
+ 
 
  
